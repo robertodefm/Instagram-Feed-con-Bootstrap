@@ -1,0 +1,11 @@
+.modal-body input{
+    height: 75px;
+}
+
+.top-post{
+    height: 30px;
+}
+
+.comments{
+    outline: 0;
+}

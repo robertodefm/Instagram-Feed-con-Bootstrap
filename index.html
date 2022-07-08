@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3a0a598fbd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Instagram Feed con Bootstrap</title>
+</head>
+<body class="bg-light">
+    <div class="">
+
+      <nav class="navbar bg-light fixed-top">
+        <div class="container">
+          <!-- Starting Navbar -->
+          <span class="navbar-brand mb-0 h1 ms-5"><i class="fa-brands fa-instagram"></i> Instagram</span>
+          <!-- button new post -->
+          <button type="button" class="btn btn-success ms-auto" data-bs-toggle="modal" data-bs-target="#createanewpost">Create a new post</button>
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle ms-3 me-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item border-top" href="#" >Log out</a></li>
+            </ul>
+          </div>
+          
+        </div>
+       
+    </div>
+
+          <!-- Modal -->
+        <div class="modal fade" id="createanewpost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-body">
+                  <input class="w-100" type="text" name="textcomment" id="textcomment">
+                  <div class="d-grid gap-2 d-md-block mt-2">
+                    <button class="btn btn-light border" type="button"><i class="fa-solid fa-camera"></i></button>
+                    <button class="btn btn-light border" type="button"><i class="fa-solid fa-location-dot"></i></button>
+                  </div>
+                  
+                </div>
+                <div class="modal-footer border-top">
+                  <button type="button" class="btn btn-light border" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+      <div class=" bg-white pt-5">
+        <ul class="nav nav-pills mt-3 mb-2 bg-white justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                class="fa-solid fa-border-all"></i></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                class="fa-solid fa-square"></i></button>
+          </li>
+        </ul>
+     </div>
+
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+       
+          <div class="row  gx-1 gy-1 mb-1 ">
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/perro-casa-shar-pei-color-rojo-mira-otro-lado_610315-5218.jpg?w=740" alt="doggie"></div>
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/vista-lateral-personas-negocios-recortadas-irreconocibles-que-trabajan-escritorio-comun_1098-20474.jpg?t=st=1657044518~exp=1657045118~hmac=499587e6ef45f019b006724cc815c9411bf5e23a91ea5148e4c7e9baced6a3b6&w=740" alt="workeando"></div>
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/apreton-manos-negocios-corporativos-socios_53876-102581.jpg?t=st=1657044765~exp=1657045365~hmac=6b468712f24aecf549f3470cecc8105486373bfd69c94f2e99ed78ac9291c515&w=740" alt="qloq"></div>
+          </div>
+          <div class="row  gx-1 gy1 mb-1">
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/pug-lindo-acostado-sofa-casa_231208-7820.jpg?t=st=1657045193~exp=1657045793~hmac=5e8ef26b47d700b578c959e00d3f15284e3bd26cafb95fa81c2bb8edfc87eb39&w=740" alt="doggie"></div>
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/tigre-bengala-blanco-cerca_113629-246.jpg?w=740" alt="workeando"></div>
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/diversos-jovenes-hablando-divirtiendose-juntos-cafe_1163-5145.jpg?t=st=1657045341~exp=1657045941~hmac=541567b6a3ea65af38d003685364d18cc1f6c2411de551de250c7284ea9beef5&w=740" alt=""></div>
+          </div>
+          <div class="row  gx-1 gy-1 mb-1">
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/electricista-masculino-trabaja-centralita-cable-conexion-electrica_169016-15090.jpg?t=st=1657045412~exp=1657046012~hmac=10d24f94eb7eb072f82f8b31d17e8eeffec4cade1871c1f0438b5d536a57874c&w=740" alt="doggie"></div>
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/payaso-manos-caderas_1187-854.jpg?t=st=1657045451~exp=1657046051~hmac=9d85a7ed0c566e969719df603a6a16f8fb3172e6be873f8171785b063bf6dafe&w=740" alt="workeando"></div>
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/gente-negocios-oficina-moderna_52137-27682.jpg?w=740" alt=""></div>
+          </div>
+          <div class="row  gx-1 gy-1 ">
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/programadores-que-desarrollan-codigos-sus-computadoras_1423-3556.jpg?w=740" alt="doggie"></div>
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/dispositivos-e-iconos-tecnologicos-conectados-al-planeta-tierra-digital_117023-449.jpg?w=740" alt="workeando"></div>
+            <div class="col-4"><img class="w-100 h-100" src="https://img.freepik.com/foto-gratis/joven-semental-campo_94120-15.jpg?w=740" alt=""></div>
+          </div>
+        
+        </div> 
+      
+
+       
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">   
+           <div class="container">
+            <div class="row justify-content-center"> 
+              <div class="col-6 ig-post  px-0 mt-3 mb-3 bg-white">
+                <div class=" d-flex justify-content-between top-post px-2 pt-1 "> <h6>My first photo</h6>  <h6 class="text-secondary">12/14</h6></div>
+                <img class="w-100" src="https://img.freepik.com/foto-gratis/perro-casa-shar-pei-color-rojo-mira-otro-lado_610315-5218.jpg?w=740" alt="">
+                <div class="likes p-2">23 Likes</div>
+                <div class="photo-comment p-2">This is my first photo of the feed. this is multi line comment for testing purposes. I am learning to code with #BreatheCode</div>
+                <div class="post-end ps-2"><i class="fa-regular fa-heart pe-2"></i> <input class="comments text-secondary border-0" type="text" placeholder="Comment..."><i class="fa-solid fa-ellipsis-vertical float-end pe-3 "></i> </div> 
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center"> 
+              <div class="col-6 ig-post  px-0 mt-3 mb-4 bg-white">
+                <div class=" d-flex justify-content-between top-post px-2 pt-1 "> <h6>My first photo</h6>  <h6 class="text-secondary">12/14</h6></div>
+                <img class="w-100" src="https://img.freepik.com/foto-gratis/vista-lateral-personas-negocios-recortadas-irreconocibles-que-trabajan-escritorio-comun_1098-20474.jpg?t=st=1657044518~exp=1657045118~hmac=499587e6ef45f019b006724cc815c9411bf5e23a91ea5148e4c7e9baced6a3b6&w=740" alt="">
+                <div class="likes p-2">100 Likes</div>
+                <div class="photo-comment p-2">This is my first photo of the feed. this is multi line comment for testing purposes. I am learning to code with #BreatheCode</div>
+                <div class="post-end ps-2"><i class="fa-regular fa-heart pe-2"></i> <input class="comments text-secondary border-0" type="text" placeholder="Comment..."><i class="fa-solid fa-ellipsis-vertical float-end pe-3 "></i> </div> 
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center"> 
+              <div class="col-6 ig-post  px-0 mt-3 mb-4 bg-white">
+                <div class=" d-flex justify-content-between top-post px-2 pt-1 "> <h6>My first photo</h6>  <h6 class="text-secondary">12/14</h6></div>
+                <img class="w-100" src="https://img.freepik.com/foto-gratis/apreton-manos-negocios-corporativos-socios_53876-102581.jpg?t=st=1657044765~exp=1657045365~hmac=6b468712f24aecf549f3470cecc8105486373bfd69c94f2e99ed78ac9291c515&w=740" alt="">
+                <div class="likes p-2">350 Likes</div>
+                <div class="photo-comment p-2">This is my first photo of the feed. this is multi line comment for testing purposes. I am learning to code with #BreatheCode</div>
+                <div class="post-end ps-2"><i class="fa-regular fa-heart pe-2"></i> <input class="comments text-secondary border-0" type="text" placeholder="Comment..."><i class="fa-solid fa-ellipsis-vertical float-end pe-3 "></i> </div> 
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center"> 
+              <div class="col-6 ig-post  px-0 mt-3 mb-4 bg-white">
+                <div class=" d-flex justify-content-between top-post px-2 pt-1 "> <h6>My first photo</h6>  <h6 class="text-secondary">12/14</h6></div>
+                <img class="w-100" src="https://img.freepik.com/foto-gratis/pug-lindo-acostado-sofa-casa_231208-7820.jpg?t=st=1657045193~exp=1657045793~hmac=5e8ef26b47d700b578c959e00d3f15284e3bd26cafb95fa81c2bb8edfc87eb39&w=740" alt="">
+                <div class="likes p-2">15 Likes</div>
+                <div class="photo-comment p-2">This is my first photo of the feed. this is multi line comment for testing purposes. I am learning to code with #BreatheCode</div>
+                <div class="post-end ps-2"><i class="fa-regular fa-heart pe-2"></i> <input class="comments text-secondary border-0" type="text" placeholder="Comment..."><i class="fa-solid fa-ellipsis-vertical float-end pe-3 "></i> </div> 
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center"> 
+              <div class="col-6 ig-post  px-0 mt-3 mb-4 bg-white">
+                <div class=" d-flex justify-content-between top-post px-2 pt-1 "> <h6>My first photo</h6>  <h6 class="text-secondary">12/14</h6></div>
+                <img class="w-100" src="https://img.freepik.com/foto-gratis/tigre-bengala-blanco-cerca_113629-246.jpg?w=740" alt="">
+                <div class="likes p-2">80 Likes</div>
+                <div class="photo-comment p-2">This is my first photo of the feed. this is multi line comment for testing purposes. I am learning to code with #BreatheCode</div>
+                <div class="post-end ps-2"><i class="fa-regular fa-heart pe-2"></i> <input class="comments text-secondary border-0" type="text" placeholder="Comment..."><i class="fa-solid fa-ellipsis-vertical float-end pe-3 "></i> </div> 
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center"> 
+              <div class="col-6 ig-post  px-0 mt-3 mb-4 bg-white">
+                <div class=" d-flex justify-content-between top-post px-2 pt-1 "> <h6>My first photo</h6>  <h6 class="text-secondary">12/14</h6></div>
+                <img class="w-100" src="https://img.freepik.com/foto-gratis/diversos-jovenes-hablando-divirtiendose-juntos-cafe_1163-5145.jpg?t=st=1657045341~exp=1657045941~hmac=541567b6a3ea65af38d003685364d18cc1f6c2411de551de250c7284ea9beef5&w=740" alt="">
+                <div class="likes p-2">10 Likes</div>
+                <div class="photo-comment p-2">This is my first photo of the feed. this is multi line comment for testing purposes. I am learning to code with #BreatheCode</div>
+                <div class="post-end ps-2"><i class="fa-regular fa-heart pe-2"></i> <input class="comments text-secondary border-0" type="text" placeholder="Comment..."><i class="fa-solid fa-ellipsis-vertical float-end pe-3 "></i> </div> 
+              </div>
+            </div>
+
+          </div> 
+          
+  
+          </div>
+
+      
+
+
+      </body>
+      
+</html>
